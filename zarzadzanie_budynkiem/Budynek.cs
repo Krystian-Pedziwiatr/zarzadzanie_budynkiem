@@ -9,9 +9,9 @@ namespace zarzadzanie_budynkiem
        
 
         public double Temperatura { get; set; }
-       
 
         public string GodzinaWlaczeniaSwiatel { get; set; }
+
 
         public Budynek(double domyslnaTemperatura = 20.0)
         {
@@ -34,6 +34,23 @@ namespace zarzadzanie_budynkiem
             }
 
 
+        }
+
+        public void ZuzycieWody_wyswietl()
+        {
+
+            var informacje = bazaDanych.OdczytajPlik("zuzycie_wody.txt");
+            foreach(var dane in informacje)
+            {
+                Console.WriteLine($"ID: {dane[0]}");
+                Console.WriteLine($"Data odczytu: {dane[1]}");
+                Console.WriteLine($"Stan licznika: {dane[2]}");
+            }
+        }
+
+        public void ZuzycieWody_dodaj()
+        {
+            
         }
     }
 }

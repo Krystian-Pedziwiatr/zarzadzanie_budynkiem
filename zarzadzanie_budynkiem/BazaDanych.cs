@@ -10,9 +10,7 @@ namespace zarzadzanie_budynkiem
 	{
    
         
-            private string sciezkaInformacje = "informacje.txt";
-            private string sciezkaPokoje = "pokoje.txt";
-            private string sciezkaUzytkownicy = "uzytkownicy.txt";
+            
 
             // Odczyt danych z pliku
             public List<string[]> OdczytajPlik(string sciezka)

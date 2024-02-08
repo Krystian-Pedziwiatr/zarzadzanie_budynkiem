@@ -142,6 +142,7 @@ class Program
 
                     case "10":
                         Console.Clear();
+                        budynek.ZuzycieWody_wyswietl();
                         
                         break;
 
