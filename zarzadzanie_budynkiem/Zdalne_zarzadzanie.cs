@@ -11,7 +11,9 @@ namespace zarzadzanie_budynkiem
             this.budynek = budynek;
         }
 
-       
+        public Zdalne_zarzadzanie()
+        {
+        }
 
         public void WyswietlMenu()
         {
@@ -25,8 +27,8 @@ namespace zarzadzanie_budynkiem
             Console.WriteLine("6. Wyjście");
         }
 
-        
-        
+        private SystemOswietlenia Oswietlenie;
+
         public void ObsluzWybor()
         {
             bool programDziala = true;
@@ -41,7 +43,7 @@ namespace zarzadzanie_budynkiem
                 {
                     case "1":
 
-                        
+                        Oswietlenie.PrzelaczSwiatla();
                         
                         
                         break;

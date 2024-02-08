@@ -8,7 +8,7 @@ namespace zarzadzanie_budynkiem
 {
     internal class SystemOswietlenia
     {
-        private bool swiatlaWlaczone;
+        public bool swiatlaWlaczone { get; private set; }
 
         public SystemOswietlenia()
         {

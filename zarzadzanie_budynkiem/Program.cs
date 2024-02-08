@@ -1,4 +1,5 @@
-﻿using zarzadzanie_budynkiem;
+﻿using System.Security.Cryptography.X509Certificates;
+using zarzadzanie_budynkiem;
 
 class Program
 {
@@ -36,6 +37,7 @@ class Program
             bool programDziala = true;
 
             Budynek budynek = new Budynek();
+            
 
             while (programDziala)
             {
@@ -60,8 +62,9 @@ class Program
                         break;
 
                     case "2":
-
-
+                       Zdalne_zarzadzanie zdalne_Zarzadzanie = new Zdalne_zarzadzanie();
+                        zdalne_Zarzadzanie.WyswietlMenu();
+                        zdalne_Zarzadzanie.ObsluzWybor();
                         break;
 
                     case "3":

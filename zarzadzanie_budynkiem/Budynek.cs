@@ -1,26 +1,17 @@
 ﻿using System;
 namespace zarzadzanie_budynkiem
 {
-    public SystemOswietlenia Oswietlenie { get; set; }
-    public SystemBezpieczenstwa Bezpieczenstwo { get; set; }
-    public ZarzadzanieEnergia SystemEnergi { get; set; }
-    public SystemKamer HVAC { get; set; }
+   
 
     public class Budynek
     {
 
         private BazaDanych bazaDanych;
+        
 
 
 
-
-        public Budynek()
-        {
-            bazaDanych = new BazaDanych();
-            Oswietlenie = new SystemOswietlenia();
-            Bezpieczenstwo = new SystemBezpieczenstwa();
-            SystemEnergi = new ZarzadzanieEnergia();
-        }
+      
 
         public void Wyswietldane()
         {
