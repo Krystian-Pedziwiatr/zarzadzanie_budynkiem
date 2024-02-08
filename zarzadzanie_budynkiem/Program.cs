@@ -11,8 +11,7 @@ class Program
         var logowanie = new Logowanie(uzytkownicy);
         bool zalogowany = logowanie.Zaloguj();
 
-        if (zalogowany)
-        {
+        
 
 
             Console.WriteLine("\n * Witaj w systemie zarządzania budynkiem *");
@@ -90,12 +89,6 @@ class Program
 
                 }
             }
-        else
-        {
-            Console.WriteLine("Podano złe dane logowania spróbuj jeszcze raz!");
-            
-        }
-
-        }
+        
     }
 
