@@ -1,17 +1,17 @@
 ﻿using System;
 namespace zarzadzanie_budynkiem
 {
-    public class Zdalne_zarzadzanie
+    public class Zdalne_zarzadzanie: Budynek
     {
-        private Dom dom;
+        private Budynek budynek;
 
-        public Zdalne_zarzadzanie(Dom dom)
+        public Zdalne_zarzadzanie(Budynek budynek)
         {
 
-            this.dom = dom;
+            this.budynek = budynek;
         }
 
-
+       
 
         public void WyswietlMenu()
         {
@@ -26,7 +26,7 @@ namespace zarzadzanie_budynkiem
         }
 
         
-
+        
         public void ObsluzWybor()
         {
             bool programDziala = true;
@@ -41,6 +41,7 @@ namespace zarzadzanie_budynkiem
                 {
                     case "1":
 
+                        
                         
                         
                         break;
