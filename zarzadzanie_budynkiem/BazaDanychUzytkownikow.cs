@@ -16,7 +16,7 @@ namespace zarzadzanie_budynkiem
 
             if (!File.Exists(sciezkaDoPliku))
             {
-                Console.WriteLine("Plik z użytkownikami nie istnieje.");
+                Console.WriteLine("Błąd bazy danych.");
                 return uzytkownicy;
             }
 

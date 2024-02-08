@@ -1,17 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace zarzadzanie_budynkiem
 {
-    internal class Automatyzacja : Budynek
-    {
-        private Budynek budynek;
-        public Automatyzacja(Budynek budynek)
+	public class Automatyzacja: Budynek
+	{
+		SystemOswietlenia Oswietlenie = new SystemOswietlenia();
+
+		public Automatyzacja() : base()
+		{
+
+		}
+
+		public void UstawTemperature(double nowaTemperatura)
+		{
+			Temperatura = nowaTemperatura;
+			Console.WriteLine($"Temperatura w budynku została zmieniona na {Temperatura} stopni Celcjusza.");
+		}
+
+        public void UstawGodzineWlaczeniaSwiatel(string nowaGodzina)
         {
-            this.budynek = new Budynek();
+            GodzinaWlaczeniaSwiatel = nowaGodzina;
+
+            Console.WriteLine($"Godzina włączenia świateł w ogrodzie została zmieniona na {GodzinaWlaczeniaSwiatel}.");
+			Oswietlenie.PrzelaczSwiatla();
         }
-    }
+
+        public void PokazTemporature()
+		{
+			Console.WriteLine($"Aktualna Temperatura w budynku: {Temperatura} stopni Celcjusza.");
+		}
+	}
 }
+

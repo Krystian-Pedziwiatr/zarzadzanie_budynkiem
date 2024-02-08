@@ -6,12 +6,20 @@ namespace zarzadzanie_budynkiem
     public class Budynek
     {
 
-        private BazaDanych bazaDanych;
-        
+       
 
+        public double Temperatura { get; set; }
+       
 
+        public string GodzinaWlaczeniaSwiatel { get; set; }
 
-      
+        public Budynek(double domyslnaTemperatura = 20.0)
+        {
+            Temperatura = domyslnaTemperatura;
+            
+        }
+
+        private BazaDanych bazaDanych = new BazaDanych();
 
         public void Wyswietldane()
         {

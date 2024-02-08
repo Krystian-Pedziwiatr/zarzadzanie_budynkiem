@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace zarzadzanie_budynkiem
 {
-    internal class SystemOswietlenia
+    public class SystemOswietlenia
     {
-        public bool swiatlaWlaczone { get; private set; }
+        public bool swiatlaWlaczone { get; set; }
 
         public SystemOswietlenia()
         {
-            swiatlaWlaczone = true;
+            swiatlaWlaczone = false;
         }
+
+     
 
         public void PrzelaczSwiatla()
         {

@@ -23,7 +23,10 @@ namespace zarzadzanie_budynkiem
                 foreach (var linia in linie.Skip(1)) // Pomija nagłówek
                 {
                     var pola = linia.Split(',');
+                    if (pola.Length >= 3)
+                    {
                     dane.Add(pola);
+                    }
                 }
 
                 return dane;
