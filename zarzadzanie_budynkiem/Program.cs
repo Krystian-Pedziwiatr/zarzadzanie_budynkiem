@@ -48,6 +48,7 @@ class Program
             SystemOtwierania OknaWSalonie = new SystemOtwierania();
             SystemOtwierania OknaWKuchni = new SystemOtwierania();
             Automatyzacja automatyzacja = new Automatyzacja();
+            PolaczenieZsystemami polaczenie = new PolaczenieZsystemami();
 
             while (programDziala)
             {
@@ -137,7 +138,7 @@ class Program
 
                     case "9":
                         Console.Clear();
-                       
+                        budynek.ZuzycieEnergii_wyswietl();
                         break;
 
                     case "10":
@@ -148,7 +149,7 @@ class Program
 
                     case "11":
                         Console.Clear();
-
+                        polaczenie.WyswietlPolacznia();
                         break;
 
                     case "12":

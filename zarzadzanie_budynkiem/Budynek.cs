@@ -48,10 +48,19 @@ namespace zarzadzanie_budynkiem
             }
         }
 
-        public void ZuzycieWody_dodaj()
+        public void ZuzycieEnergii_wyswietl()
         {
-            
+
+            var informacje = bazaDanych.OdczytajPlik("zuzycie_energi.txt");
+            foreach (var dane in informacje)
+            {
+                Console.WriteLine($"ID: {dane[0]}");
+                Console.WriteLine($"Data odczytu: {dane[1]}");
+                Console.WriteLine($"Stan licznika: {dane[2]}");
+            }
         }
+
+
     }
 }
 
