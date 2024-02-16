@@ -71,8 +71,7 @@ namespace zarzadzanie_budynkiem
                 }
             }
 
-            // Metody specyficzne dla poszczególnych typów danych, np. dla mieszkań, pokoi, użytkowników
-            // Można tu dodać metody jak OdczytajMieszkania(), ZapiszMieszkania(), itp.
+           
         }
  }
 
